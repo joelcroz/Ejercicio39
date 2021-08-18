@@ -12,8 +12,8 @@ namespace Ejercicio39
         {
             try
             {
-                double celsius, conversion;
-                int opcion;
+                double celsius, resultadoConversion;
+                Conversion opcion;
                 Console.Clear();
                 Console.WriteLine("Conversion de temperaturas Celsius");
                 Console.Write("Ingrese la tenperatura en grados Celsius:");
@@ -25,34 +25,30 @@ namespace Ejercicio39
                     Console.WriteLine("3-Kelvin");
                     Console.WriteLine("4-Rankine");
                     Console.Write("ingresa la opcion selecionada:");
-                    opcion = Convert.ToInt32(Console.ReadLine());
-                    if (opcion >= 1 && opcion <= 4)
+                    opcion = (Conversion)Convert.ToInt32(Console.ReadLine());
+                    switch (opcion)
                     {
-                        switch (opcion)
-                        {
-                            case 1:
-                                conversion = ConvertiraFahrenheit(celsius);
-                                Console.WriteLine($"La conversion a Fah es {conversion}");
-                                break;
-                            case 2:
-                                conversion = ConvertiraReamur(celsius);
-                                Console.WriteLine($"La conversion a Reamur es {conversion}");
-                                break;
-                            case 3:
-                                conversion = ConvertiraKelvin(celsius);
-                                Console.WriteLine($"La conversion a Kelvin es {conversion}");
-                                break;
-                            default:
-                                conversion = ConvertiraRankine(celsius);
-                                Console.WriteLine($"La conversion a Rankine es {conversion}");
-                                break;
-                        }
+                        case Conversion.Fahrenheit:
+                            resultadoConversion = ConvertiraFahrenheit(celsius);
+                            Console.WriteLine($"El equivalente en grados F es {resultadoConversion}");
+                            break;
+                        case Conversion.Reaumur:
+                            resultadoConversion = ConvertiraReamur(celsius);
+                            Console.WriteLine($"El equivalente en grados Reaumur es {resultadoConversion}");
+                            break;
+                        case Conversion.Kelvin:
+                            resultadoConversion = ConvertiraKelvin(celsius);
+                            Console.WriteLine($"El equivalente en grados K es {resultadoConversion}");
+                            break;
+                        case Conversion.Rankine:
+                            resultadoConversion = ConvertiraRankine(celsius);
+                            Console.WriteLine($"El equivalente en grados Rankine es {resultadoConversion}");
+                            break;
+                        default:
+                            Console.WriteLine("Opcion ingresada no valida");
+                            break;
+                    }
 
-                    }
-                    else
-                    {
-                        Console.WriteLine("Opcion no valida");
-                    }
                 }
                 else
                 {

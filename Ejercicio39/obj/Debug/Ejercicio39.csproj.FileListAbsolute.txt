@@ -1,0 +1,7 @@
+C:\Codigo\Ejercicio39\Ejercicio39\bin\Debug\Ejercicio39.exe.config
+C:\Codigo\Ejercicio39\Ejercicio39\bin\Debug\Ejercicio39.exe
+C:\Codigo\Ejercicio39\Ejercicio39\bin\Debug\Ejercicio39.pdb
+C:\Codigo\Ejercicio39\Ejercicio39\obj\Debug\Ejercicio39.csproj.AssemblyReference.cache
+C:\Codigo\Ejercicio39\Ejercicio39\obj\Debug\Ejercicio39.csproj.CoreCompileInputs.cache
+C:\Codigo\Ejercicio39\Ejercicio39\obj\Debug\Ejercicio39.exe
+C:\Codigo\Ejercicio39\Ejercicio39\obj\Debug\Ejercicio39.pdb
